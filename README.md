@@ -39,6 +39,7 @@ There is also a sourcepawn enum struct included in the native, to provide an eas
 - Run ambuild from build dir
 - Windows
   - Use the Visual Studio Developer Command Prompt
+  - Currently Seems to crash at least when trying to get the StudioHDR of a model
 
 # Notes
 - The source code can be found in /sourcemod/public/hitbox_changer. 
