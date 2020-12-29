@@ -37,7 +37,8 @@ There is also a sourcepawn enum struct included in the native, to provide an eas
 - hitboxchanger-hl2sdk-csgo should be adjacent to your sourcemod directory, as should metamod 1.10.
 - Run configure.py from sourcemod/public/hitbox_changer/build. Use `CC=clang CXX=clang++ python3 ../configure.py` on linux
 - Run ambuild from build dir
-- Profit???
+- Windows
+  - Use the Visual Studio Developer Command Prompt
 
 # Notes
 - The source code can be found in /sourcemod/public/hitbox_changer. 
