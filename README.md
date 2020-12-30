@@ -10,24 +10,24 @@ This extension provides natives with the ability to modify the hitboxes of a mod
   - Max Point
   - Angle
   - Radius
-  - And you can also get all of this info from a hitbox
+  - And you can also get all of this info from a hitbox.
 - Change the number of hitboxes in the hitboxset.
   - You can *not* change this beyond the amount of hitboxes the model originally had, however you can make it less than or even negative values.
   - Use `GetNumHitboxes` first so you can get the max number you can set without crashing.
-- Print debug info about a models hitboxes to server console
-- Print debug info about a models bones to server console
-- Print a list of valid bones/bone names for use as a hitbox bone
-- Get a bones index by its name
+- Print debug info about a models hitboxes to server console.
+- Print debug info about a models bones to server console.
+- Print a list of valid bones/bone names for use as a hitbox bone.
+- Get a bones index by its name.
 
 # Natives
-- `HitboxInfo`      Print all the hitboxes to server console
-- `BoneInfo`        Print all the bones to server console
-- `SetHitbox`       Set the properties at a hitbox index
-- `GetHitbox`       Get the properties at a hitbox index
-- `SetNumHitboxes`  Set the number of hitboxes for a model
-- `GetNumHitboxes`  Get the number of hitboxes for a model
-- `FindBone`        Find a bone's index in a model by name
-- `FindValidBones`  Print a list of the bones in a model which can have a hitbox attached
+- `HitboxInfo`      Print all the hitboxes to server console.
+- `BoneInfo`        Print all the bones to server console.
+- `SetHitbox`       Set the properties at a hitbox index.
+- `GetHitbox`       Get the properties at a hitbox index.
+- `SetNumHitboxes`  Set the number of hitboxes for a model.
+- `GetNumHitboxes`  Get the number of hitboxes for a model.
+- `FindBone`        Find a bone's index in a model by name.
+- `FindValidBones`  Print a list of the bones in a model which can have a hitbox attached.
 
 # Hitbox Enum Struct
 There is also a sourcepawn enum struct included in the native, to provide an easy method of hitbox reuse. Includes methods to copy the attributes to and from a model by using the structs data, as well as to print the data stored in the struct to server console.
@@ -35,11 +35,12 @@ There is also a sourcepawn enum struct included in the native, to provide an eas
 # Building
 - Place the hitbox_changer directory in your sourcemod 1.10 public directory.
 - hitboxchanger-hl2sdk-csgo should be adjacent to your sourcemod directory, as should metamod 1.10.
-- Run configure.py from sourcemod/public/hitbox_changer/build. Use `CC=clang CXX=clang++ python3 ../configure.py` on linux
+- Run configure.py from sourcemod/public/hitbox_changer/build. Use `CC=clang CXX=clang++ python3 ../configure.py` on linux.
 - Run ambuild from build dir
 - Windows
-  - Use the Visual Studio Developer Command Prompt
-  - Currently Seems to crash at least when trying to get the StudioHDR of a model
+  - Use the Visual Studio Developer Command Prompt.
+  - ~~Currently Seems to crash at least when trying to get the StudioHDR of a model~~
+  - No longer crashes on windows, thanks peace-maker.
 
 # Notes
 - The source code can be found in /sourcemod/public/hitbox_changer. 
