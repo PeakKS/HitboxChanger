@@ -212,6 +212,8 @@ public:
 
 	virtual void					UpdateViewWeaponModelCache( const char **ppWeaponModels, int nWeaponModels ) = 0;
 	virtual void					TouchWorldWeaponModelCache( const char **ppWeaponModels, int nWeaponModels ) = 0;
+	virtual vcollide_t				*GetVCollide(const model_t *model, float unk1) const = 0;
+	virtual vcollide_t				*GetVCollide(int modelindex, float unk1) const = 0;
 };
 
 
