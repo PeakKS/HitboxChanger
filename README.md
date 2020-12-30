@@ -47,3 +47,24 @@ There is also a sourcepawn enum struct included in the native, to provide an eas
 - *You must build against the included modified hl2sdk-csgo for this to work.* 
 - A hitboxes bone must have the `BONE_USED_BY_HITBOX` flag set, I am currently unable to set this, so it is error checked and setting to an invalid bone will fail.
 - It should not take too much work to modify the extension for use in another source game, mainly removal of capsule code, but I currently have no means of testing for another game and no incentive, so feel free to release a modified version for other games. 
+
+# Zombie Reloaded
+If you are using the ZR plugin, and want to remove human hitboxes for a performance boost, simply alter the zr/models.inc file to include the extension and edit the ModelsPrecache function to be:
+```sourcepawn
+/**
+ * Precaches all models.
+ */
+ModelsPrecache()
+{
+    decl String:file[PLATFORM_MAX_PATH];
+
+    // Loop through all models, build full path and cache them.
+    for (new model = 0; model < ModelCount; model++)
+    {
+        ModelsGetFullPath(model, file, sizeof(file));
+        int modelIndex = PrecacheModel(file);
+        if((modelIndex != 0) && (ModelData[model][Model_Team] == ModelTeam_Humans))
+            SetNumHitboxes(modelIndex, -1);
+    }
+}
+```
