@@ -39,11 +39,10 @@ There is also a sourcepawn enum struct included in the native, to provide an eas
 - Run ambuild from build dir
 - Windows
   - Use the Visual Studio Developer Command Prompt
+  - Currently Seems to crash at least when trying to get the StudioHDR of a model
 
 # Notes
 - The source code can be found in /sourcemod/public/hitbox_changer. 
 - *You must build against the included modified hl2sdk-csgo for this to work.* 
 - A hitboxes bone must have the `BONE_USED_BY_HITBOX` flag set, I am currently unable to set this, so it is error checked and setting to an invalid bone will fail.
 - It should not take too much work to modify the extension for use in another source game, mainly removal of capsule code, but I currently have no means of testing for another game and no incentive, so feel free to release a modified version for other games. 
-- It should not take too much work to modify the extension for use in another source game, mainly removal of capsule code, but I currently have no means of testing for another game and no incentive, so feel free to release a modified version for other games :). 
-- I do not have a windows server to test this on but I can see no reason it will not work there.
