@@ -1,5 +1,6 @@
 # HitboxChanger
 Sourcemod extension to provide the ability to edit the hitbox of a model from memory to a sourcemod plugin. It is necesary to use the custom hl2sdk-csgo as it has been extensively modeified to allow for this to work.
+Forum thread here: https://forums.alliedmods.net/showthread.php?t=329554
 
 # Capabilities
 This extension provides natives with the ability to modify the hitboxes of a model without recompilation.
