@@ -52,6 +52,7 @@ There is also a sourcepawn enum struct included in the native, to provide an eas
 
 # Zombie Reloaded
 **Note: This extension is now included in the latest version of ZR, if you have the latest version, this is already done, just add the extension.
+
 If you are using the ZR plugin, and want to remove human hitboxes for a performance boost, simply alter the zr/models.inc file to include the extension and edit the ModelsPrecache function to be:
 
 ```sourcepawn
