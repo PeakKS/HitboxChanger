@@ -51,7 +51,7 @@ There is also a sourcepawn enum struct included in the native, to provide an eas
 - It should not take too much work to modify the extension for use in another source game, mainly removal of capsule code, but I currently have no means of testing for another game and no incentive, so feel free to release a modified version for other games. 
 
 # Zombie Reloaded
-**Note: This extension is now included in the latest version of ZR, if you have the latest version, this is already done, just add the extension.
+__Note: This extension is now included in the latest version of ZR, if you have the latest version, this is already done, just add the extension.__
 
 If you are using the ZR plugin, and want to remove human hitboxes for a performance boost, simply alter the zr/models.inc file to include the extension and edit the ModelsPrecache function to be:
 
